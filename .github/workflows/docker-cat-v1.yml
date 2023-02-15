@@ -2,7 +2,7 @@ name: Docker CI cat-v1 | PRIVATE
 
 env:
   DIRECTORY: cat-v1
-  DOCKERREPO: seblum/private
+  DOCKERREPO: ${{ secrets.PRIVATE_REPO }}
 
 on:
   push:
